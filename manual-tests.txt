@@ -61,4 +61,9 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+## M4
+1. Build and run Cico
+2. enter abcd
+
+## expected: should display the numbers in the text box
 
