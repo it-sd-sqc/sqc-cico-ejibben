@@ -219,6 +219,13 @@ public class Main {
   // Entry point //////////////////////////////////////////////////////////////
   // Our GUI code is very similar; however, we want to keep it explicit.
   @SuppressWarnings("DuplicatedCode")
+  private void jText(java.awt.event.KeyEvent evt) {
+    if(!Character.isDigit(evt.getKeyChar()))
+      (
+              evt.consume();
+  )
+
+  }
   public static void main(String[] args) {
     // Initialize variables.
     db = null;
@@ -259,6 +266,7 @@ public class Main {
     fieldNumber.setBackground(Color.green);
     fieldNumber.setForeground(Color.magenta);
     panelMain.add(fieldNumber);
+
 
     JButton updateButton = new JButton("Update");
     updateButton.setAlignmentX(JComponent.CENTER_ALIGNMENT);
